@@ -1,10 +1,15 @@
-age = 20
-has_permission = False
+day_number = 3
 
-if age >= 18:
-    if has_permission:
-        print("Acess granted.")
-    else:
-        print("Acess denied")
-else: 
-    print("Acess denied.")
+match day_number:
+    case 1:
+        say_name = "Monday"
+    case 2:
+        day_name = "Tuesday"  
+    case 3:
+        day_name = "Wednesday"
+    case 4:
+        day_name = "Thursday"
+
+print(day_name)
+      
+

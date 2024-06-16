@@ -51,3 +51,60 @@ Does nothing, just...pases..for now.
 # Boolean Operators
 AND, OR, NOT. Operands needs to be boolean as well
 
+age = 20
+has_permission = False
+
+if age >= 18:
+    if has_permission:
+        print("Acess granted.")
+    else:
+        print("Acess denied")
+else: 
+    print("Acess denied.")
+
+if age >=18 and has_permission:
+    print("Acess granted.")
+else: 
+    print("Acess denied")
+
+# Termary Operator
+Condense series of code to one line, where applicable
+
+print("Access granted.") if age >=18 and has_permission else print("Access denied.")
+
+temperature = 30
+if temperature > 30:
+    message = "It's hot outside"
+ else:
+     message = "It's not hot outside"
+
+print(message)
+
+message = "it's hot outside" if temperature > 30 else "It's not hot outside"
+
+# Match-case
+Control flow, similar to switch statement in other programming lanaguages day_number = 3
+
+day_number = 3
+
+match day_number:
+    case 1:
+        day_name = "Monday"
+    case 2:
+        day_name = "Tuesday"  
+    case 3:
+        day_name = "Wednesday"
+    case 4:
+        day_name = "Thursday"
+
+print(day_name)
+
+# Activity
+write a python script that asks the user to input a numerical score and categorizes it into grades (A, B ,C ,D ,F) based on the following criteria:
+
+     90-100: A
+     80-89: B
+     70-79: C
+     60-69: D
+     0-59: F
+
